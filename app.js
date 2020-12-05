@@ -16,6 +16,7 @@ mongoose.connect(
   .then(() => console.log("Connected to DB"))
   .catch(err => console.log(err));
 
+mongoose.Promise = global.Promise;
 
 // Middleware for parsing json
 app.use(express.json());
