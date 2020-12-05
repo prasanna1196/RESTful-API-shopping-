@@ -79,7 +79,7 @@ router.get('/:id', (req, res, next) => {
                     request: {
                         type: 'GET',
                         description: 'Get all products in the link below',
-                        url: 'http://localhost3000/products'
+                        url: 'http://localhost:3000/products'
                     }
                 });
             } else {
@@ -127,7 +127,7 @@ router.delete('/:id', (req, res, next) => {
                 message: "Product deleted",
                 request: {
                     type: 'POST',
-                    url: 'http://localhost3000/products/',
+                    url: 'http://localhost:3000/products/',
                     body: { name: 'String', price: 'Number'}
                 }
             });
